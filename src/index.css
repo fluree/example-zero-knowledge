@@ -11,3 +11,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.resize-drag {
+  background-color: rgb(11, 61, 87);
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 30px 80px;
+  touch-action: none;
+
+  width: 120px;
+
+  /* This makes things *much* easier */
+  box-sizing: border-box;
+}
+
+.resize-container {
+  width: 500px;
+  height: 240px;
+  background-color: #29e;
+  margin-left: 50px;
+}
+
+.x-axis {
+  padding-left: 5px;
+  width: 500px;
+  padding-bottom: 5px;
+}
+
+@media (max-width: 550px) {
+  .resize-container {
+    margin-left: 0px;
+  }
+  .x-axis {
+    margin-left: 0px;
+  }
+ }

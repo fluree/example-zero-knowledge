@@ -1,0 +1,549 @@
+{
+ "mainCode": "{\n    {\n        {\n            {\n                {\n                }\n            }\n        }\n        {\n        }\n    }\n}\n",
+ "signalName2Idx": {
+  "one": 0,
+  "main.latitudeRange[0]": 2,
+  "main.latitudeRange[1]": 3,
+  "main.longitudeRange[0]": 4,
+  "main.longitudeRange[1]": 5,
+  "main.fishingLocation[0]": 6,
+  "main.fishingLocation[1]": 7,
+  "main.out": 1,
+  "main.gt1.in[0]": 6,
+  "main.gt1.in[1]": 2,
+  "main.gt1.out": 1,
+  "main.gt1.lt.in[0]": 2,
+  "main.gt1.lt.in[1]": 25,
+  "main.gt1.lt.out": 1,
+  "main.gt1.lt.n2b.in": 26,
+  "main.gt1.lt.n2b.out[0]": 27,
+  "main.gt1.lt.n2b.out[1]": 8,
+  "main.gt1.lt.n2b.out[2]": 9,
+  "main.gt1.lt.n2b.out[3]": 10,
+  "main.gt1.lt.n2b.out[4]": 11,
+  "main.gt1.lt.n2b.out[5]": 12,
+  "main.gt1.lt.n2b.out[6]": 13,
+  "main.gt1.lt.n2b.out[7]": 14,
+  "main.gt1.lt.n2b.out[8]": 15,
+  "main.gt1.lt.n2b.out[9]": 28,
+  "main.gt1.lt.n2b.out[10]": 16,
+  "main.gt1.lt.n2b.out[11]": 17,
+  "main.gt1.lt.n2b.out[12]": 18,
+  "main.gt1.lt.n2b.out[13]": 19,
+  "main.gt1.lt.n2b.out[14]": 20,
+  "main.gt1.lt.n2b.out[15]": 21,
+  "main.gt1.lt.n2b.out[16]": 22,
+  "main.gt1.lt.n2b.out[17]": 23,
+  "main.gt1.lt.n2b.out[18]": 24
+ },
+ "components": [
+  {
+   "name": "main",
+   "params": {},
+   "template": "InAuthorizedRange",
+   "inputSignals": 6
+  },
+  {
+   "name": "main.gt1",
+   "params": {
+    "n": "9"
+   },
+   "template": "GreaterEqThan",
+   "inputSignals": 2
+  },
+  {
+   "name": "main.gt1.lt",
+   "params": {
+    "n": "9"
+   },
+   "template": "LessThan",
+   "inputSignals": 2
+  },
+  {
+   "name": "main.gt1.lt.n2b",
+   "params": {
+    "n": "19"
+   },
+   "template": "Num2Bits",
+   "inputSignals": 1
+  }
+ ],
+ "componentName2Idx": {
+  "main": 0,
+  "main.gt1": 1,
+  "main.gt1.lt": 2,
+  "main.gt1.lt.n2b": 3
+ },
+ "signals": [
+  {
+   "names": [
+    "one"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.out",
+    "main.gt1.out",
+    "main.gt1.lt.out"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.latitudeRange[0]",
+    "main.gt1.in[1]",
+    "main.gt1.lt.in[0]"
+   ],
+   "triggerComponents": [
+    0,
+    1,
+    2
+   ]
+  },
+  {
+   "names": [
+    "main.latitudeRange[1]"
+   ],
+   "triggerComponents": [
+    0
+   ]
+  },
+  {
+   "names": [
+    "main.longitudeRange[0]"
+   ],
+   "triggerComponents": [
+    0
+   ]
+  },
+  {
+   "names": [
+    "main.longitudeRange[1]"
+   ],
+   "triggerComponents": [
+    0
+   ]
+  },
+  {
+   "names": [
+    "main.fishingLocation[0]",
+    "main.gt1.in[0]"
+   ],
+   "triggerComponents": [
+    0,
+    1
+   ]
+  },
+  {
+   "names": [
+    "main.fishingLocation[1]"
+   ],
+   "triggerComponents": [
+    0
+   ]
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[1]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[2]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[3]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[4]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[5]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[6]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[7]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[8]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[10]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[11]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[12]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[13]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[14]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[15]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[16]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[17]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[18]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.in[1]"
+   ],
+   "triggerComponents": [
+    2
+   ]
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.in"
+   ],
+   "triggerComponents": [
+    3
+   ]
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[0]"
+   ],
+   "triggerComponents": []
+  },
+  {
+   "names": [
+    "main.gt1.lt.n2b.out[9]"
+   ],
+   "triggerComponents": []
+  }
+ ],
+ "constraints": [
+  [
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "1": "512",
+    "2": "1",
+    "6": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "8": "21888242871839275222246405745257275088548364400416034343698204186575808495615",
+    "9": "21888242871839275222246405745257275088548364400416034343698204186575808495613",
+    "10": "21888242871839275222246405745257275088548364400416034343698204186575808495609",
+    "11": "21888242871839275222246405745257275088548364400416034343698204186575808495601",
+    "12": "21888242871839275222246405745257275088548364400416034343698204186575808495585",
+    "13": "21888242871839275222246405745257275088548364400416034343698204186575808495553",
+    "14": "21888242871839275222246405745257275088548364400416034343698204186575808495489",
+    "15": "21888242871839275222246405745257275088548364400416034343698204186575808495361",
+    "16": "21888242871839275222246405745257275088548364400416034343698204186575808494593",
+    "17": "21888242871839275222246405745257275088548364400416034343698204186575808493569",
+    "18": "21888242871839275222246405745257275088548364400416034343698204186575808491521",
+    "19": "21888242871839275222246405745257275088548364400416034343698204186575808487425",
+    "20": "21888242871839275222246405745257275088548364400416034343698204186575808479233",
+    "21": "21888242871839275222246405745257275088548364400416034343698204186575808462849",
+    "22": "21888242871839275222246405745257275088548364400416034343698204186575808430081",
+    "23": "21888242871839275222246405745257275088548364400416034343698204186575808364545",
+    "24": "21888242871839275222246405745257275088548364400416034343698204186575808233473"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495615",
+    "1": "512",
+    "2": "1",
+    "6": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "8": "21888242871839275222246405745257275088548364400416034343698204186575808495615",
+    "9": "21888242871839275222246405745257275088548364400416034343698204186575808495613",
+    "10": "21888242871839275222246405745257275088548364400416034343698204186575808495609",
+    "11": "21888242871839275222246405745257275088548364400416034343698204186575808495601",
+    "12": "21888242871839275222246405745257275088548364400416034343698204186575808495585",
+    "13": "21888242871839275222246405745257275088548364400416034343698204186575808495553",
+    "14": "21888242871839275222246405745257275088548364400416034343698204186575808495489",
+    "15": "21888242871839275222246405745257275088548364400416034343698204186575808495361",
+    "16": "21888242871839275222246405745257275088548364400416034343698204186575808494593",
+    "17": "21888242871839275222246405745257275088548364400416034343698204186575808493569",
+    "18": "21888242871839275222246405745257275088548364400416034343698204186575808491521",
+    "19": "21888242871839275222246405745257275088548364400416034343698204186575808487425",
+    "20": "21888242871839275222246405745257275088548364400416034343698204186575808479233",
+    "21": "21888242871839275222246405745257275088548364400416034343698204186575808462849",
+    "22": "21888242871839275222246405745257275088548364400416034343698204186575808430081",
+    "23": "21888242871839275222246405745257275088548364400416034343698204186575808364545",
+    "24": "21888242871839275222246405745257275088548364400416034343698204186575808233473"
+   },
+   {}
+  ],
+  [
+   {
+    "8": "1"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "8": "1"
+   },
+   {}
+  ],
+  [
+   {
+    "9": "1"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "9": "1"
+   },
+   {}
+  ],
+  [
+   {
+    "10": "1"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "10": "1"
+   },
+   {}
+  ],
+  [
+   {
+    "11": "1"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "11": "1"
+   },
+   {}
+  ],
+  [
+   {
+    "12": "1"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "12": "1"
+   },
+   {}
+  ],
+  [
+   {
+    "13": "1"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "13": "1"
+   },
+   {}
+  ],
+  [
+   {
+    "14": "1"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "14": "1"
+   },
+   {}
+  ],
+  [
+   {
+    "15": "1"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "15": "1"
+   },
+   {}
+  ],
+  [
+   {
+    "0": "1",
+    "1": "21888242871839275222246405745257275088548364400416034343698204186575808495616"
+   },
+   {
+    "1": "21888242871839275222246405745257275088548364400416034343698204186575808495616"
+   },
+   {}
+  ],
+  [
+   {
+    "16": "1"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "16": "1"
+   },
+   {}
+  ],
+  [
+   {
+    "17": "1"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "17": "1"
+   },
+   {}
+  ],
+  [
+   {
+    "18": "1"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "18": "1"
+   },
+   {}
+  ],
+  [
+   {
+    "19": "1"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "19": "1"
+   },
+   {}
+  ],
+  [
+   {
+    "20": "1"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "20": "1"
+   },
+   {}
+  ],
+  [
+   {
+    "21": "1"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "21": "1"
+   },
+   {}
+  ],
+  [
+   {
+    "22": "1"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "22": "1"
+   },
+   {}
+  ],
+  [
+   {
+    "23": "1"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "23": "1"
+   },
+   {}
+  ],
+  [
+   {
+    "24": "1"
+   },
+   {
+    "0": "21888242871839275222246405745257275088548364400416034343698204186575808495616",
+    "24": "1"
+   },
+   {}
+  ],
+  [
+   {},
+   {},
+   {
+    "0": "1",
+    "1": "21888242871839275222246405745257275088548364400416034343698204186575808495616"
+   }
+  ]
+ ],
+ "templates": {
+  "CompConstant": "function(ctx) {\n    ctx.setVar(\"sum\", [], \"0\");\n    ctx.setVar(\"b\", [], \"340282366920938463463374607431768211455\");\n    ctx.setVar(\"a\", [], \"1\");\n    ctx.setVar(\"e\", [], \"1\");\n    for (ctx.setVar(\"i\", [], \"0\");bigInt(bigInt(ctx.getVar(\"i\",[])).lt(bigInt(\"127\")) ? 1 : 0).neq(bigInt(0));(ctx.setVar(\"i\", [], bigInt(ctx.getVar(\"i\",[])).add(bigInt(\"1\")).mod(__P__))).add(__P__).sub(bigInt(1)).mod(__P__)) { \n    {\n        ctx.setVar(\"clsb\", [], bigInt(bigInt(bigInt(ctx.getVar(\"i\",[])).mul(bigInt(\"2\")).mod(__P__)).greater(bigInt(256)) ? 0 : bigInt(ctx.getVar(\"ct\",[])).shr(bigInt(bigInt(ctx.getVar(\"i\",[])).mul(bigInt(\"2\")).mod(__P__))).and(__MASK__)).and(bigInt(\"1\")).and(__MASK__));\n        ctx.setVar(\"cmsb\", [], bigInt(bigInt(bigInt(bigInt(ctx.getVar(\"i\",[])).mul(bigInt(\"2\")).mod(__P__)).add(bigInt(\"1\")).mod(__P__)).greater(bigInt(256)) ? 0 : bigInt(ctx.getVar(\"ct\",[])).shr(bigInt(bigInt(bigInt(ctx.getVar(\"i\",[])).mul(bigInt(\"2\")).mod(__P__)).add(bigInt(\"1\")).mod(__P__))).and(__MASK__)).and(bigInt(\"1\")).and(__MASK__));\n        ctx.setVar(\"slsb\", [], ctx.getSignal(\"in\", [bigInt(ctx.getVar(\"i\",[])).mul(bigInt(\"2\")).mod(__P__)]));\n        ctx.setVar(\"smsb\", [], ctx.getSignal(\"in\", [bigInt(bigInt(ctx.getVar(\"i\",[])).mul(bigInt(\"2\")).mod(__P__)).add(bigInt(\"1\")).mod(__P__)]));\n        if (bigInt(bigInt((bigInt(ctx.getVar(\"cmsb\",[])).eq(bigInt(\"0\")) ? 1 : 0)).and(bigInt((bigInt(ctx.getVar(\"clsb\",[])).eq(bigInt(\"0\")) ? 1 : 0))).and(__MASK__)).neq(bigInt(0))) {\n        {\n            ctx.setSignal(\"parts\", [ctx.getVar(\"i\",[])], bigInt(bigInt(bigInt(bigInt(__P__.sub(bigInt(ctx.getVar(\"b\",[]))).mod(__P__)).mul(bigInt(ctx.getVar(\"smsb\",[]))).mod(__P__)).mul(bigInt(ctx.getVar(\"slsb\",[]))).mod(__P__)).add(bigInt(bigInt(ctx.getVar(\"b\",[])).mul(bigInt(ctx.getVar(\"smsb\",[]))).mod(__P__))).mod(__P__)).add(bigInt(bigInt(ctx.getVar(\"b\",[])).mul(bigInt(ctx.getVar(\"slsb\",[]))).mod(__P__))).mod(__P__));\n        }\n\n        } else {\n        if (bigInt(bigInt((bigInt(ctx.getVar(\"cmsb\",[])).eq(bigInt(\"0\")) ? 1 : 0)).and(bigInt((bigInt(ctx.getVar(\"clsb\",[])).eq(bigInt(\"1\")) ? 1 : 0))).and(__MASK__)).neq(bigInt(0))) {\n        {\n            ctx.setSignal(\"parts\", [ctx.getVar(\"i\",[])], bigInt(bigInt(bigInt(bigInt(bigInt(bigInt(ctx.getVar(\"a\",[])).mul(bigInt(ctx.getVar(\"smsb\",[]))).mod(__P__)).mul(bigInt(ctx.getVar(\"slsb\",[]))).mod(__P__)).add(__P__).sub(bigInt(bigInt(ctx.getVar(\"a\",[])).mul(bigInt(ctx.getVar(\"slsb\",[]))).mod(__P__))).mod(__P__)).add(bigInt(bigInt(ctx.getVar(\"b\",[])).mul(bigInt(ctx.getVar(\"smsb\",[]))).mod(__P__))).mod(__P__)).add(__P__).sub(bigInt(bigInt(ctx.getVar(\"a\",[])).mul(bigInt(ctx.getVar(\"smsb\",[]))).mod(__P__))).mod(__P__)).add(bigInt(ctx.getVar(\"a\",[]))).mod(__P__));\n        }\n\n        } else {\n        if (bigInt(bigInt((bigInt(ctx.getVar(\"cmsb\",[])).eq(bigInt(\"1\")) ? 1 : 0)).and(bigInt((bigInt(ctx.getVar(\"clsb\",[])).eq(bigInt(\"0\")) ? 1 : 0))).and(__MASK__)).neq(bigInt(0))) {\n        {\n            ctx.setSignal(\"parts\", [ctx.getVar(\"i\",[])], bigInt(bigInt(bigInt(bigInt(ctx.getVar(\"b\",[])).mul(bigInt(ctx.getVar(\"smsb\",[]))).mod(__P__)).mul(bigInt(ctx.getVar(\"slsb\",[]))).mod(__P__)).add(__P__).sub(bigInt(bigInt(ctx.getVar(\"a\",[])).mul(bigInt(ctx.getVar(\"smsb\",[]))).mod(__P__))).mod(__P__)).add(bigInt(ctx.getVar(\"a\",[]))).mod(__P__));\n        }\n\n        } else {\n        {\n            ctx.setSignal(\"parts\", [ctx.getVar(\"i\",[])], bigInt(bigInt(bigInt(__P__.sub(bigInt(ctx.getVar(\"a\",[]))).mod(__P__)).mul(bigInt(ctx.getVar(\"smsb\",[]))).mod(__P__)).mul(bigInt(ctx.getVar(\"slsb\",[]))).mod(__P__)).add(bigInt(ctx.getVar(\"a\",[]))).mod(__P__));\n        }\n\n        }\n\n        }\n\n        }\n        ctx.setVar(\"sum\", [], bigInt(ctx.getVar(\"sum\",[])).add(bigInt(ctx.getSignal(\"parts\", [ctx.getVar(\"i\",[])]))).mod(__P__));\n        ctx.setVar(\"b\", [], bigInt(ctx.getVar(\"b\",[])).add(__P__).sub(bigInt(ctx.getVar(\"e\",[]))).mod(__P__));\n        ctx.setVar(\"a\", [], bigInt(ctx.getVar(\"a\",[])).add(bigInt(ctx.getVar(\"e\",[]))).mod(__P__));\n        ctx.setVar(\"e\", [], bigInt(ctx.getVar(\"e\",[])).mul(bigInt(\"2\")).mod(__P__));\n    }\n\n     }\n    ctx.setSignal(\"sout\", [], ctx.getVar(\"sum\",[]));\n    ctx.setPin(\"num2bits\", [], \"in\", [], ctx.getSignal(\"sout\", []));\n    ctx.setSignal(\"out\", [], ctx.getPin(\"num2bits\", [], \"out\", [\"127\"]));\n}\n",
+  "AliasCheck": "function(ctx) {\n    for (ctx.setVar(\"i\", [], \"0\");bigInt(bigInt(ctx.getVar(\"i\",[])).lt(bigInt(\"254\")) ? 1 : 0).neq(bigInt(0));(ctx.setVar(\"i\", [], bigInt(ctx.getVar(\"i\",[])).add(bigInt(\"1\")).mod(__P__))).add(__P__).sub(bigInt(1)).mod(__P__)) { \n    ctx.setPin(\"compConstant\", [], \"in\", [ctx.getVar(\"i\",[])], ctx.getSignal(\"in\", [ctx.getVar(\"i\",[])]))\n     }\n    ctx.assert(ctx.getPin(\"compConstant\", [], \"out\", []), \"0\", \"undefined:31:4\");\n}\n",
+  "Num2Bits": "function(ctx) {\n    ctx.setVar(\"lc1\", [], \"0\");\n    for (ctx.setVar(\"i\", [], \"0\");bigInt(bigInt(ctx.getVar(\"i\",[])).lt(bigInt(ctx.getVar(\"n\",[]))) ? 1 : 0).neq(bigInt(0));(ctx.setVar(\"i\", [], bigInt(ctx.getVar(\"i\",[])).add(bigInt(\"1\")).mod(__P__))).add(__P__).sub(bigInt(1)).mod(__P__)) { \n    {\n        ctx.setSignal(\"out\", [ctx.getVar(\"i\",[])], bigInt(bigInt(ctx.getVar(\"i\",[])).greater(bigInt(256)) ? 0 : bigInt(ctx.getSignal(\"in\", [])).shr(bigInt(ctx.getVar(\"i\",[]))).and(__MASK__)).and(bigInt(\"1\")).and(__MASK__));\n        ctx.assert(bigInt(ctx.getSignal(\"out\", [ctx.getVar(\"i\",[])])).mul(bigInt(bigInt(ctx.getSignal(\"out\", [ctx.getVar(\"i\",[])])).add(__P__).sub(bigInt(\"1\")).mod(__P__))).mod(__P__), \"0\", \"/Users/plogian/fluree/legal-fishing/node_modules/circomlib/circuits/bitify.circom:31:8\");\n        ctx.setVar(\"lc1\", [], bigInt(ctx.getVar(\"lc1\",[])).add(bigInt(bigInt(ctx.getSignal(\"out\", [ctx.getVar(\"i\",[])])).mul(bigInt(bigInt(\"2\").modPow(bigInt(ctx.getVar(\"i\",[])), __P__))).mod(__P__))).mod(__P__));\n    }\n\n     }\n    ctx.assert(ctx.getVar(\"lc1\",[]), ctx.getSignal(\"in\", []), \"/Users/plogian/fluree/legal-fishing/node_modules/circomlib/circuits/bitify.circom:35:4\");\n}\n",
+  "Num2Bits_strict": "function(ctx) {\n    ctx.setPin(\"n2b\", [], \"in\", [], ctx.getSignal(\"in\", []));\n    for (ctx.setVar(\"i\", [], \"0\");bigInt(bigInt(ctx.getVar(\"i\",[])).lt(bigInt(\"254\")) ? 1 : 0).neq(bigInt(0));(ctx.setVar(\"i\", [], bigInt(ctx.getVar(\"i\",[])).add(bigInt(\"1\")).mod(__P__))).add(__P__).sub(bigInt(1)).mod(__P__)) { \n    {\n        ctx.setSignal(\"out\", [ctx.getVar(\"i\",[])], ctx.getPin(\"n2b\", [], \"out\", [ctx.getVar(\"i\",[])]));\n        ctx.setPin(\"aliasCheck\", [], \"in\", [ctx.getVar(\"i\",[])], ctx.getPin(\"n2b\", [], \"out\", [ctx.getVar(\"i\",[])]));\n    }\n\n     }\n}\n",
+  "Bits2Num": "function(ctx) {\n    ctx.setVar(\"lc1\", [], \"0\");\n    for (ctx.setVar(\"i\", [], \"0\");bigInt(bigInt(ctx.getVar(\"i\",[])).lt(bigInt(ctx.getVar(\"n\",[]))) ? 1 : 0).neq(bigInt(0));(ctx.setVar(\"i\", [], bigInt(ctx.getVar(\"i\",[])).add(bigInt(\"1\")).mod(__P__))).add(__P__).sub(bigInt(1)).mod(__P__)) { \n    {\n        ctx.setVar(\"lc1\", [], bigInt(ctx.getVar(\"lc1\",[])).add(bigInt(bigInt(ctx.getSignal(\"in\", [ctx.getVar(\"i\",[])])).mul(bigInt(bigInt(\"2\").modPow(bigInt(ctx.getVar(\"i\",[])), __P__))).mod(__P__))).mod(__P__));\n    }\n\n     }\n    ctx.setSignal(\"out\", [], ctx.getVar(\"lc1\",[]));\n}\n",
+  "Bits2Num_strict": "function(ctx) {\n    for (ctx.setVar(\"i\", [], \"0\");bigInt(bigInt(ctx.getVar(\"i\",[])).lt(bigInt(\"254\")) ? 1 : 0).neq(bigInt(0));(ctx.setVar(\"i\", [], bigInt(ctx.getVar(\"i\",[])).add(bigInt(\"1\")).mod(__P__))).add(__P__).sub(bigInt(1)).mod(__P__)) { \n    {\n        ctx.setPin(\"b2n\", [], \"in\", [ctx.getVar(\"i\",[])], ctx.getSignal(\"in\", [ctx.getVar(\"i\",[])]));\n        ctx.setPin(\"aliasCheck\", [], \"in\", [ctx.getVar(\"i\",[])], ctx.getSignal(\"in\", [ctx.getVar(\"i\",[])]));\n    }\n\n     }\n    ctx.setSignal(\"out\", [], ctx.getPin(\"b2n\", [], \"out\", []));\n}\n",
+  "Num2BitsNeg": "function(ctx) {\n    ctx.setVar(\"lc1\", [], \"0\");\n    ctx.setVar(\"neg\", [], bigInt((bigInt(ctx.getVar(\"n\",[])).eq(bigInt(\"0\")) ? 1 : 0)).neq(bigInt(0)) ? (\"0\") : (bigInt(bigInt(\"2\").modPow(bigInt(ctx.getVar(\"n\",[])), __P__)).add(__P__).sub(bigInt(ctx.getSignal(\"in\", []))).mod(__P__)));\n    for (ctx.setVar(\"i\", [], \"0\");bigInt(bigInt(ctx.getVar(\"i\",[])).lt(bigInt(ctx.getVar(\"n\",[]))) ? 1 : 0).neq(bigInt(0));(ctx.setVar(\"i\", [], bigInt(ctx.getVar(\"i\",[])).add(bigInt(\"1\")).mod(__P__))).add(__P__).sub(bigInt(1)).mod(__P__)) { \n    {\n        ctx.setSignal(\"out\", [ctx.getVar(\"i\",[])], bigInt(bigInt(ctx.getVar(\"i\",[])).greater(bigInt(256)) ? 0 : bigInt(ctx.getVar(\"neg\",[])).shr(bigInt(ctx.getVar(\"i\",[]))).and(__MASK__)).and(bigInt(\"1\")).and(__MASK__));\n        ctx.assert(bigInt(ctx.getSignal(\"out\", [ctx.getVar(\"i\",[])])).mul(bigInt(bigInt(ctx.getSignal(\"out\", [ctx.getVar(\"i\",[])])).add(__P__).sub(bigInt(\"1\")).mod(__P__))).mod(__P__), \"0\", \"undefined:92:8\");\n        ctx.setVar(\"lc1\", [], bigInt(ctx.getVar(\"lc1\",[])).add(bigInt(bigInt(ctx.getSignal(\"out\", [ctx.getVar(\"i\",[])])).mul(bigInt(bigInt(\"2\").modPow(bigInt(ctx.getVar(\"i\",[])), __P__))).mod(__P__))).mod(__P__));\n    }\n\n     }\n    ctx.setPin(\"isZero\", [], \"in\", [], ctx.getSignal(\"in\", []));\n    ctx.assert(bigInt(ctx.getVar(\"lc1\",[])).add(bigInt(bigInt(ctx.getPin(\"isZero\", [], \"out\", [])).mul(bigInt(bigInt(\"2\").modPow(bigInt(ctx.getVar(\"n\",[])), __P__))).mod(__P__))).mod(__P__), bigInt(bigInt(\"2\").modPow(bigInt(ctx.getVar(\"n\",[])), __P__)).add(__P__).sub(bigInt(ctx.getSignal(\"in\", []))).mod(__P__), \"undefined:100:4\");\n}\n",
+  "BinSum": "function(ctx) {\n    ctx.setVar(\"nout\", [], ctx.callFunction(\"nbits\", [bigInt(bigInt(bigInt(\"2\").modPow(bigInt(ctx.getVar(\"n\",[])), __P__)).add(__P__).sub(bigInt(\"1\")).mod(__P__)).mul(bigInt(ctx.getVar(\"ops\",[]))).mod(__P__)]));\n    ctx.setVar(\"lin\", [], \"0\");\n    ctx.setVar(\"lout\", [], \"0\");\n    for (ctx.setVar(\"k\", [], \"0\");bigInt(bigInt(ctx.getVar(\"k\",[])).lt(bigInt(ctx.getVar(\"n\",[]))) ? 1 : 0).neq(bigInt(0));(ctx.setVar(\"k\", [], bigInt(ctx.getVar(\"k\",[])).add(bigInt(\"1\")).mod(__P__))).add(__P__).sub(bigInt(1)).mod(__P__)) { \n    {\n        for (ctx.setVar(\"j\", [], \"0\");bigInt(bigInt(ctx.getVar(\"j\",[])).lt(bigInt(ctx.getVar(\"ops\",[]))) ? 1 : 0).neq(bigInt(0));(ctx.setVar(\"j\", [], bigInt(ctx.getVar(\"j\",[])).add(bigInt(\"1\")).mod(__P__))).add(__P__).sub(bigInt(1)).mod(__P__)) { \n        {\n            ctx.setVar(\"lin\", [], bigInt(ctx.getVar(\"lin\",[])).add(bigInt(bigInt(ctx.getSignal(\"in\", [ctx.getVar(\"j\",[]),ctx.getVar(\"k\",[])])).mul(bigInt(bigInt(\"2\").modPow(bigInt(ctx.getVar(\"k\",[])), __P__))).mod(__P__))).mod(__P__));\n        }\n\n         }\n    }\n\n     }\n    for (ctx.setVar(\"k\", [], \"0\");bigInt(bigInt(ctx.getVar(\"k\",[])).lt(bigInt(ctx.getVar(\"nout\",[]))) ? 1 : 0).neq(bigInt(0));(ctx.setVar(\"k\", [], bigInt(ctx.getVar(\"k\",[])).add(bigInt(\"1\")).mod(__P__))).add(__P__).sub(bigInt(1)).mod(__P__)) { \n    {\n        ctx.setSignal(\"out\", [ctx.getVar(\"k\",[])], bigInt(bigInt(ctx.getVar(\"k\",[])).greater(bigInt(256)) ? 0 : bigInt(ctx.getVar(\"lin\",[])).shr(bigInt(ctx.getVar(\"k\",[]))).and(__MASK__)).and(bigInt(\"1\")).and(__MASK__));\n        ctx.assert(bigInt(ctx.getSignal(\"out\", [ctx.getVar(\"k\",[])])).mul(bigInt(bigInt(ctx.getSignal(\"out\", [ctx.getVar(\"k\",[])])).add(__P__).sub(bigInt(\"1\")).mod(__P__))).mod(__P__), \"0\", \"undefined:85:8\");\n        ctx.setVar(\"lout\", [], bigInt(ctx.getVar(\"lout\",[])).add(bigInt(bigInt(ctx.getSignal(\"out\", [ctx.getVar(\"k\",[])])).mul(bigInt(bigInt(\"2\").modPow(bigInt(ctx.getVar(\"k\",[])), __P__))).mod(__P__))).mod(__P__));\n    }\n\n     }\n    ctx.assert(ctx.getVar(\"lin\",[]), ctx.getVar(\"lout\",[]), \"undefined:92:4\");\n}\n",
+  "IsZero": "function(ctx) {\n    ctx.setSignal(\"inv\", [], bigInt((bigInt(ctx.getSignal(\"in\", [])).eq(bigInt(\"0\")) ? 0 : 1)).neq(bigInt(0)) ? (bigInt(\"1\").mul( bigInt(ctx.getSignal(\"in\", [])).inverse(__P__) ).mod(__P__)) : (\"0\"));\n    ctx.setSignal(\"out\", [], bigInt(bigInt(__P__.sub(bigInt(ctx.getSignal(\"in\", []))).mod(__P__)).mul(bigInt(ctx.getSignal(\"inv\", []))).mod(__P__)).add(bigInt(\"1\")).mod(__P__));\n    ctx.assert(bigInt(ctx.getSignal(\"in\", [])).mul(bigInt(ctx.getSignal(\"out\", []))).mod(__P__), \"0\", \"undefined:32:4\");\n}\n",
+  "IsEqual": "function(ctx) {\n    ctx.setPin(\"isz\", [], \"in\", [], bigInt(ctx.getSignal(\"in\", [\"1\"])).add(__P__).sub(bigInt(ctx.getSignal(\"in\", [\"0\"]))).mod(__P__));\n    ctx.setSignal(\"out\", [], ctx.getPin(\"isz\", [], \"out\", []));\n}\n",
+  "ForceEqualIfEnabled": "function(ctx) {\n    ctx.setPin(\"isz\", [], \"in\", [], bigInt(ctx.getSignal(\"in\", [\"1\"])).add(__P__).sub(bigInt(ctx.getSignal(\"in\", [\"0\"]))).mod(__P__));\n    ctx.assert(bigInt(bigInt(\"1\").add(__P__).sub(bigInt(ctx.getPin(\"isz\", [], \"out\", []))).mod(__P__)).mul(bigInt(ctx.getSignal(\"enabled\", []))).mod(__P__), \"0\", \"undefined:55:4\");\n}\n",
+  "LessThan": "function(ctx) {\n    ctx.setPin(\"n2b\", [], \"in\", [], bigInt(bigInt(ctx.getSignal(\"in\", [\"0\"])).add(bigInt(bigInt(ctx.getVar(\"n\",[])).greater(bigInt(256)) ? 0 : bigInt(\"1\").shl(bigInt(ctx.getVar(\"n\",[]))).and(__MASK__))).mod(__P__)).add(__P__).sub(bigInt(ctx.getSignal(\"in\", [\"1\"]))).mod(__P__));\n    ctx.setSignal(\"out\", [], bigInt(\"1\").add(__P__).sub(bigInt(ctx.getPin(\"n2b\", [], \"out\", [ctx.getVar(\"n\",[])]))).mod(__P__));\n}\n",
+  "LessEqThan": "function(ctx) {\n    ctx.setPin(\"lt\", [], \"in\", [\"0\"], ctx.getSignal(\"in\", [\"0\"]));\n    ctx.setPin(\"lt\", [], \"in\", [\"1\"], bigInt(ctx.getSignal(\"in\", [\"1\"])).add(bigInt(\"1\")).mod(__P__));\n    ctx.setSignal(\"out\", [], ctx.getPin(\"lt\", [], \"out\", []));\n}\n",
+  "GreaterThan": "function(ctx) {\n    ctx.setPin(\"lt\", [], \"in\", [\"0\"], ctx.getSignal(\"in\", [\"1\"]));\n    ctx.setPin(\"lt\", [], \"in\", [\"1\"], ctx.getSignal(\"in\", [\"0\"]));\n    ctx.setSignal(\"out\", [], ctx.getPin(\"lt\", [], \"out\", []));\n}\n",
+  "GreaterEqThan": "function(ctx) {\n    ctx.setPin(\"lt\", [], \"in\", [\"0\"], ctx.getSignal(\"in\", [\"1\"]));\n    ctx.setPin(\"lt\", [], \"in\", [\"1\"], bigInt(ctx.getSignal(\"in\", [\"0\"])).add(bigInt(\"1\")).mod(__P__));\n    ctx.setSignal(\"out\", [], ctx.getPin(\"lt\", [], \"out\", []));\n}\n",
+  "InAuthorizedRange": "function(ctx) {\n    ctx.setPin(\"gt1\", [], \"in\", [\"0\"], ctx.getSignal(\"fishingLocation\", [\"0\"]));\n    ctx.setPin(\"gt1\", [], \"in\", [\"1\"], ctx.getSignal(\"latitudeRange\", [\"0\"]));\n    ctx.assert(ctx.getPin(\"gt1\", [], \"out\", []), \"1\", \"/Users/plogian/fluree/legal-fishing/src/circuits/InRange.circom:22:4\");\n    ctx.setSignal(\"out\", [], ctx.getPin(\"gt1\", [], \"out\", []));\n}\n"
+ },
+ "functions": {
+  "nbits": {
+   "params": [
+    "a"
+   ],
+   "func": "function(ctx) {\n    ctx.setVar(\"n\", [], \"1\");\n    ctx.setVar(\"r\", [], \"0\");\n    while (bigInt(bigInt(bigInt(ctx.getVar(\"n\",[])).add(__P__).sub(bigInt(\"1\")).mod(__P__)).lt(bigInt(ctx.getVar(\"a\",[]))) ? 1 : 0).neq(bigInt(0))) {\n    {\n        (ctx.setVar(\"r\", [], bigInt(ctx.getVar(\"r\",[])).add(bigInt(\"1\")).mod(__P__))).add(__P__).sub(bigInt(1)).mod(__P__);\n        ctx.setVar(\"n\", [], bigInt(ctx.getVar(\"n\",[])).mul(bigInt(\"2\")).mod(__P__));\n    }\n\n    }\n    return ctx.getVar(\"r\",[]);;\n}\n"
+  }
+ },
+ "nPrvInputs": 2,
+ "nPubInputs": 4,
+ "nInputs": 6,
+ "nOutputs": 1,
+ "nVars": 25,
+ "nConstants": 4,
+ "nSignals": 29
+}
