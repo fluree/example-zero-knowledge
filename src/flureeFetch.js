@@ -8,18 +8,9 @@ function gateway(ip) {
     return "https://db.flur.ee";
   } 
   else if (hosted) {
-    return "http://localhost:8081"
+    return "http://localhost:8080"
   } else if (!hosted){
     return ip;
-  }
-}
-
-function getTokenClaims(token) {
-  try {
-    return JSON.parse(atob(token.split('.')[1]));
-  }
-  catch (e) {
-    return {};
   }
 }
 

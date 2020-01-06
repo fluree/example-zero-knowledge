@@ -1,0 +1,57 @@
+[{
+    "_id": "_collection",
+    "name": "snarkConfig"
+},
+{
+    "_id": "_collection",
+    "name": "proof"
+},
+{
+    "_id": "_predicate",
+    "name": "snarkConfig/id",
+    "type": "string",
+    "unique": true
+},
+{
+    "_id": "_predicate",
+    "name": "snarkConfig/circuit",
+    "type": "json"
+},
+{
+    "_id": "_predicate",
+    "name": "snarkConfig/verificationKey",
+    "type": "json"
+},
+{
+    "_id": "_predicate",
+    "name": "snarkConfig/provingKey",
+    "type": "json"
+},
+{
+    "_id": "_predicate",
+    "name": "snarkConfig/proofs",
+    "type": "ref",
+    "restrictCollection": "proof",
+    "multi": true
+},
+{
+    "_id": "_predicate",
+    "name": "proof/id",
+    "type": "string",
+    "unique": true
+},
+{
+    "_id": "_predicate",
+    "name": "proof/proof",
+    "type": "json"
+},
+{
+    "_id": "_predicate",
+    "name": "proof/publicSignals",
+    "type": "json"
+},
+{
+    "_id": "_predicate",
+    "name": "proof/instant",
+    "type": "instant"
+}]
