@@ -48,7 +48,8 @@
 {
     "_id": "_predicate",
     "name": "proof/publicSignals",
-    "type": "json"
+    "type": "json",
+    "index": true
 },
 {
     "_id": "_predicate",
