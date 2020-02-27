@@ -12,7 +12,7 @@ Please check out the accompanying [blog post](https://flur.ee/2020/02/05/using-z
 
 Features demonstrated: zero knowledge proofs, data immutability, and traceability. 
 
-![Legal Fishing App](public/zero-knowldge.gif)
+![Legal Fishing App](public/zero-knowledge.gif)
 
 ### Get Started
 
