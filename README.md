@@ -4,9 +4,9 @@ This Github repo demonstrates how one could set up a Fluree ledger to use zero-k
 
 In this example, Fluree is deployed as a backend data management platform in managing trusted data. The use-case is a simple example of:
 
-1.) the establishment of a dynamic zone where fishing is allowed
-2.) the ability for boats to input catch locations without disclosing where the catch was precisely made
-3.) the ability for a third party to validate that the fish was caught in an allowed zone, without disclosing their catch location
+1. the establishment of a dynamic zone where fishing is allowed
+2. the ability for boats to input catch locations without disclosing where the catch was precisely made
+3. the ability for a third party to validate that the fish was caught in an allowed zone, without disclosing their catch location
 
 Please check out the accompanying [blog post](https://flur.ee/2020/02/05/using-zero-knowledge-proofs-with-fluree/) and [video](https://youtu.be/LlBBaorIzgs) !
 
