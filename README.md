@@ -97,6 +97,15 @@ There are other example queries that you can try out in `/resources/example_quer
 
 ![Legal Fishing Queries](public/queries.gif)
 
+#### Visual Studio Code
+If you are using Visual Studio Code to view this repo, you can issue the example queries using the extension.
+
+1. Download the `Fluree: Beta extension`. In the top menu bar, select `View` > `Extensions`. Then search `Fluree: Beta` and click install.
+2. Open the Command Palette by going to `View` > `Command Palette`, and issue `Fluree: Set Config`.
+3. Highlight any query in `resources/example_queries.js`, using the Command Palette, issue, `Fluree: Query`, and the results of the query will appear in a `flureeResponse.txt` file. Note: every time you issue a query or transaction, this file gets overwritten.
+
+![Visual Studio Code](public/vscode.gif)
+
 ### Resources
 
 To see more example projects, visit our [example repo](https://github.com/fluree/examples). 
